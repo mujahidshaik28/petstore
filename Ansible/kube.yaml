@@ -11,5 +11,5 @@
       become: yes  # Use sudo for copying if required
       become_user: root  # Use a privileged user for copying if required
 
-    - name: Apply Deployment
-      command: kubectl apply -f /home/ubuntu/deployment.yaml
+    - name: Apply Deployment 
+      command: kubectl apply -f /home/ubuntu/deployment.yaml --validate=false
