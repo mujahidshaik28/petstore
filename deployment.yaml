@@ -13,7 +13,7 @@ spec:
         app: petstore
     spec:
       containers:
-      - name: petshop
+      - name: petstore
         image: mujahid28/petstore:latest
         ports:
         - containerPort: 8080
@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: petshop
+  name: petstore
 spec:
   type: LoadBalancer
   selector:
